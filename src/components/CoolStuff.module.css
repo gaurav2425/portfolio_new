@@ -16,12 +16,18 @@
   align-items: flex-start;
   text-align: left;
 }
-
+.link {
+  color: rgb(58, 58, 255);
+  font-family: "Lora", serif;
+  text-decoration: underline;
+  font-size: medium;
+  cursor: pointer;
+}
 .heading {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .para {

@@ -1,12 +1,18 @@
 import React from "react";
-import styles from "./Experience.module.css";
+import styles from "./CoolStuff.module.css";
 import DecryptedText from "./DecryptedText";
-function AboutMe() {
+function CoolStuff() {
   return (
     <div className={styles.experience_container}>
+      <div>
+        <img
+          src={require("../assets/macold.png")}
+          className={styles.experience_img}
+        ></img>
+      </div>
       <div className={styles.experience_container_text}>
-        <h1 className={styles.heading}>About Me</h1>
-
+        <h1 className={styles.heading}>Tattle Cafe</h1>
+        <h2 className={styles.link}>https://www.tattlecafe.com/</h2>
         <p className={styles.para}>
           I built an extensive library of highly customizable assets and created
           an optimized render pipeline to distribute these assets across web
@@ -27,15 +33,8 @@ function AboutMe() {
           Spline, Lottie, Rive, React Three Fiber and Framer
         </p>
       </div>
-
-      <div>
-        <img
-          src={require("../assets/skills.png")}
-          className={styles.experience_img}
-        ></img>
-      </div>
     </div>
   );
 }
 
-export default AboutMe;
+export default CoolStuff;

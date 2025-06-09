@@ -10,6 +10,11 @@
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-size: 30px;
-  width: 900px;
+  width: 1000px;
   text-align: center;
+  font-weight: 500;
+}
+
+iframe {
+  display: none;
 }

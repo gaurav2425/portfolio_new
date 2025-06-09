@@ -8,6 +8,8 @@ import ScrollFloat from "./components/ScrollFloat.js";
 import Footer from "./components/Footer.js";
 import AboutMe from "./components/AboutMe.js";
 import ShinyText from "./components/ShinyText.js";
+import CoolStuff from "./components/CoolStuff.js";
+import BlurText from "./components/BlurText.js";
 // import Footer from "./components/Footer";
 function App() {
   return (
@@ -20,26 +22,9 @@ function App() {
           alignItems: "center",
         }}
       >
-        {/* <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-          }}
-        >
-          <h1 className="heading">
-            Thibaut Crépelle, 3D & Motion generalist freelance who makes
-            products dance. Your one-stop shop, with more disco.
-          </h1>
-
-          <h1 className="heading">
-            Thibaut Crépelle, 3D & Motion generalist freelance who makes
-            products dance. Your one-stop shop, with more disco.
-          </h1>
-        </div> */}
         <div style={{ marginTop: 50 }}>
           <SplitText
-            text="Lets, Make  it Move!"
+            text="Lets,   Make  it     Move!"
             className="text-2xl font-semibold text-center"
             delay={150}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
@@ -51,10 +36,13 @@ function App() {
           <div
             style={{
               padding: 10,
-              borderRadius: 20,
-              borderColor: "#303030",
-              borderWidth: 1,
-              borderStyle: "solid",
+              // borderRadius: 20,
+              borderTopColor: "#303030",
+              borderBottomColor: "#303030",
+              borderTopWidth: 1,
+              borderBottomWidth: 1,
+              borderTopStyle: "solid",
+              borderBottomStyle: "solid",
               justifyContent: "space-evenly",
               display: "flex",
               flexDirection: "row",
@@ -63,6 +51,12 @@ function App() {
           >
             <ShinyText
               text="Home"
+              disabled={false}
+              speed={3}
+              className="custom-class"
+            />
+            <ShinyText
+              text="Cool stuff"
               disabled={false}
               speed={3}
               className="custom-class"
@@ -85,31 +79,16 @@ function App() {
               speed={3}
               className="custom-class"
             />
-            <ShinyText
-              text="Contact"
-              disabled={false}
-              speed={3}
-              className="custom-class"
-            />
           </div>
         </div>
 
-        <div
-          style={
-            {
-              // border: "1px solid white",
-              // position: "absolute",
-              // top: "10%",
-            }
-          }
-        >
+        <div>
           <img
             src={require("./assets/bg5.png")}
             style={{
               width: 1000,
               marginTop: "500px", // Initial marginTop position
-              transition: "margin-top 1s ease", // Animation duration and easing function
-              // position: "absolute",
+              transition: "margin-top 2s ease", // Animation duration and easing function
             }}
             onLoad={(e) => {
               // Apply the margin-top animation after the image is loaded
@@ -121,10 +100,30 @@ function App() {
         </div>
 
         <h1 className="heading">
-          Thibaut Crépelle, 3D & Motion generalist freelance who makes products
-          dance. Your one-stop shop, with more disco.
+          I am Gaurav, mobile app developer engineering smooth, scalable apps.
+          Your expert in turning code into seamless user journeys.
         </h1>
       </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "column",
+          marginTop: 100,
+          // border: "1px solid white",
+        }}
+      >
+        <BlurText
+          text=" Cool Stuff I've Done"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          // onAnimationComplete={handleAnimationComplete}
+          className="text-2xl mb-8"
+        />
+      </div>
+      <CoolStuff></CoolStuff>
       <AboutMe></AboutMe>
       {/* <CircularText
         text="REACT Native MOBILE APP DEVELOPER "
@@ -132,27 +131,28 @@ function App() {
         spinDuration={20}
         className="custom-class"
       /> */}
-      <Experience></Experience>
       <div
         style={{
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          rotate: "90%",
+          marginTop: 50,
+          marginBottom: 50,
+          // border: "1px solid white",
         }}
       >
-        <img
-          src={require("./assets/spilled.png")}
-          style={{
-            width: 400,
-            marginTop: 0,
-            // position: "absolute",
-            // marginTop: 200,
-          }}
-        ></img>
+        <BlurText
+          text="Past Experience"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          // onAnimationComplete={handleAnimationComplete}
+          className="text-2xl mb-8"
+        />
       </div>
-
+      <Experience></Experience>
+      <Experience></Experience>
       {/* <Experience></Experience> */}
       <Footer></Footer>
     </div>

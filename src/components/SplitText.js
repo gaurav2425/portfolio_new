@@ -87,7 +87,7 @@ const SplitText = ({
                   display: "inline-block",
                   willChange: "transform, opacity",
                   fontSize: 100,
-                  fontWeight: 600,
+                  fontWeight: 500,
                   fontFamily: "Lora, serif",
                 }}
               >
